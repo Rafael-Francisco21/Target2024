@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Letra 'A'</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verificar Letra 'A'</h1>
+        <form action="/stringChecker" method="POST">
+            <label for="inputString">Informe uma string:</label>
+            <input type="text" id="inputString" name="inputString" required>
+            <button type="submit">Verificar</button>
+        </form>
+
+        {{#result}}
+        <div class="result">
+            <p>{{result}}</p>
+        </div>
+        {{/result}}
+    </div>
+</body>
+</html>
